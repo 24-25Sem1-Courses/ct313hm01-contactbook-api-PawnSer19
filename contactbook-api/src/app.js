@@ -18,6 +18,8 @@ return res.json(JSend.success());
 
 contactsRouter.setup(app);
 
+app.use('/public', express.static('public'));
+
 //Handle 404 response
 app.use(resourceNotFound);
 
